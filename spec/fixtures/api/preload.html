@@ -4,6 +4,7 @@
 if (!window.test)
   window.test = 'window'
 require('electron').ipcRenderer.send('answer', window.test);
+require('electron').ipcRenderer.send('pid', window.pid);
 </script>
 </body>
 </html>
