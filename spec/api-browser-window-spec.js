@@ -1580,7 +1580,8 @@ describe('BrowserWindow module', () => {
           show: false,
           webPreferences: {
             sandbox: true,
-            preload: preload
+            preload: preload,
+            webviewTag: true
           }
         })
         w.loadURL('file://' + path.join(fixtures, 'pages', 'webview-no-script.html'))
